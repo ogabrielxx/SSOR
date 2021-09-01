@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Nome da máquina: "
+cat /etc/hostname
+echo "Data e hora: "
+date
+echo "Ativo desde: "
+uptime
+echo "Versão do sistema: "
+cat /proc/version
+echo "Quantidade de CPU/Core: "
+grep "cpu cores" /proc/cpuinfo
+echo "Modelo do processador: "
+grep "model name" /proc/cpuinfo
+echo "Memória disponível: "
+grep "MemAvailable" /proc/meminfo
+echo "Partições: "
+df -kh
+

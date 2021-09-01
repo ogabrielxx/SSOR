@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "UID do usuario: "
+id -u gabriel
+echo "Nome do usuario: "
+logname
+echo "Total de uso na /home: "
+du -sh /home
+echo "Informações de ultimo login: "
+last gabriel
